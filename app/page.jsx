@@ -111,9 +111,9 @@ const COPY = {
       "Freelance risk checklist",
       "Launch plan for compliant EU hiring"
     ],
-    firstName: "First name",
+    firstName: "Your name",
     company: "Company",
-    email: "Work email",
+    email: "Your email",
     primaryCountry: "Primary country",
     submit: "Get playbook + strategy session",
     integrationHint:
@@ -754,10 +754,26 @@ export default function Page() {
     setForm((prev) => ({ ...prev, [key]: value }));
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const data = {
+    firstName,
+    company,
+    email,
+    primaryCountry,
   };
+
+  await fetch("https://formspree.io/f/xkokebwk", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  alert("Submitted successfully!");
+};
 
   return (
     <main className="pageShell">
@@ -1092,7 +1108,7 @@ export default function Page() {
 
           <div className="leadRight">
             {!submitted ? (
-              <form onSubmit={onSubmit} className="leadForm">
+              <form action="https://formspree.io/f/xkokebwk" method="POST"> className="leadForm">
                 <div>
                   <div className="microLabel">Get instant access</div>
                   <h3 className="formTitle">{copy.ctaPrimary}</h3>
@@ -1101,17 +1117,36 @@ export default function Page() {
                 <div className="formGrid">
                   <div className="field">
                     <label>{copy.firstName}</label>
-                    <input value={form.firstName} onChange={(e) => setField("firstName", e.target.value)} placeholder="Karina" required />
+                    <input
+  name="firstName"
+  value={form.firstName}
+  onChange={(e) => setField("firstName", e.target.value)}
+  placeholder="Steve Piterson"
+  required
+/> placeholder="Steve Piterson" required />
                   </div>
                   <div className="field">
                     <label>{copy.company}</label>
-                    <input value={form.company} onChange={(e) => setField("company", e.target.value)} placeholder="Your company" required />
+                    <input
+  name="company"
+  value={form.company}
+  onChange={(e) => setField("company", e.target.value)}
+  placeholder="Your company"
+  required
+/> placeholder="Your company" required />
                   </div>
                 </div>
 
                 <div className="field">
                   <label>{copy.email}</label>
-                  <input type="email" value={form.workEmail} onChange={(e) => setField("workEmail", e.target.value)} placeholder="name@company.com" required />
+                  <input
+  name="email"
+  type="email"
+  value={form.workEmail}
+  onChange={(e) => setField("workEmail", e.target.value)}
+  placeholder="name@company.com"
+  required
+/> placeholder="your@email.com" required />
                 </div>
 
                 <div className="formGrid">

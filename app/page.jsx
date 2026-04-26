@@ -1118,35 +1118,13 @@ const handleSubmit = async (e) => {
                   <div className="field">
                     <label>{copy.firstName}</label>
                     <input
-  name="firstName"
-  value={form.firstName}
-  onChange={(e) => setField("firstName", e.target.value)}
-  placeholder="Steve Piterson"
-  required
-/> placeholder="Steve Piterson" required />
-                  </div>
-                  <div className="field">
-                    <label>{copy.company}</label>
-                    <input
-  name="company"
-  value={form.company}
-  onChange={(e) => setField("company", e.target.value)}
-  placeholder="Your company"
-  required
-/> placeholder="Your company" required />
-                  </div>
-                </div>
-
-                <div className="field">
-                  <label>{copy.email}</label>
-                  <input
   name="email"
   type="email"
   value={form.workEmail}
   onChange={(e) => setField("workEmail", e.target.value)}
-  placeholder="name@company.com"
+  placeholder="your@email.com"
   required
-/> placeholder="your@email.com" required />
+/>
                 </div>
 
                 <div className="formGrid">

@@ -1129,22 +1129,31 @@ const handleSubmit = async (e) => {
 
                 <div className="formGrid">
                   <div className="field">
-                    <label>{copy.teamSize}</label>
-                    <select value={form.teamSize} onChange={(e) => setField("teamSize", e.target.value)}>
-                      <option>1-5</option>
-                      <option>6-10</option>
-                      <option>11-20</option>
-                      <option>20+</option>
-                    </select>
+                    <label>Hiring goal</label>
+<select
+  name="hiringGoal"
+  value={form.hiringGoal}
+  onChange={(e) => setField("hiringGoal", e.target.value)}
+  required
+>
+  <option value="" disabled>Select hiring goal</option>
+  <option value="first-hire">Hiring first employee in Europe</option>
+  <option value="expanding">Expanding team in Europe</option>
+  <option value="contractors">Hiring contractors</option>
+  <option value="compliance">Fixing compliance / structure</option>
+  <option value="unsure">Not sure yet</option>
+</select>
                   </div>
-                  <div className="field">
-                    <label>{copy.primaryCountry}</label>
-                    <select value={form.country} onChange={(e) => setField("country", e.target.value)}>
-                      {Object.entries(COUNTRIES).map(([key, value]) => (
-                        <option key={key} value={key}>{value.name[lang]}</option>
-                      ))}
-                    </select>
-                  </div>
+                 <div className="field">
+  <label>{copy.primaryCountry}</label>
+  <input
+    name="country"
+    value={form.country}
+    onChange={(e) => setField("country", e.target.value)}
+    placeholder="e.g. Spain, Germany, France"
+    required
+  />
+</div>
                 </div>
 
                 <div className={riskClass}>

@@ -1073,59 +1073,134 @@ const handleSubmit = async (e) => {
         </div>
       </section>
 
-      <section className="darkSection">
-        <div className="container sectionPad twoColWide darkGrid">
-          <div>
-            <Pill>{copy.proofTitle}</Pill>
-            <h2 className="sectionTitle light">{copy.proofSub}</h2>
-            <p className="sectionSub lightSub">
-              This page is designed to convert across Google, LinkedIn, Facebook, Instagram, and direct outbound by combining authority, urgency, role-based relevance, and lead capture.
-            </p>
-          </div>
-          <div className="processCard">
-            {copy.proofSteps.map((step, i) => (
-              <div className="stepItem" key={step}>
-                <div className="stepNum">{i + 1}</div>
-                <div>{step}</div>
-              </div>
-            ))}
-          </div>
+<section className="darkSection">
+  <div className="container sectionPad twoColWide darkGrid">
+    <div>
+      <Pill>{copy.proofTitle}</Pill>
+      <h2 className="sectionTitle light">{copy.proofSub}</h2>
+      <p className="sectionSub lightSub">
+        This page is designed to convert across Google, LinkedIn, Facebook, Instagram, and direct outbound by combining authority, urgency, role-based relevance, and lead capture.
+      </p>
+    </div>
+    <div className="processCard">
+      {copy.proofSteps.map((step, i) => (
+        <div className="stepItem" key={step}>
+          <div className="stepNum">{i + 1}</div>
+          <div>{step}</div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
-      <section className="container sectionPad" id="lead-capture">
-        <div className="leadGrid">
-          <div className="leadLeft">
-            <Pill>{copy.leadBadge}</Pill>
-            <h2 className="sectionTitle light">{copy.leadTitle}</h2>
-            <p className="sectionSub lightSub">{copy.leadSub}</p>
-            <div className="leadBulletGrid">
-              {copy.leadBullets.map((item) => (
-                <div className="leadBullet" key={item}>✓ {item}</div>
-              ))}
-            </div>
+<section className="container sectionPad" id="lead-capture">
+  <div className="leadGrid">
+    
+    <div className="leadLeft">
+      <Pill>{copy.leadBadge}</Pill>
+      <h2 className="sectionTitle light">{copy.leadTitle}</h2>
+      <p className="sectionSub lightSub">{copy.leadSub}</p>
+
+      <div className="leadBulletGrid">
+        {copy.leadBullets.map((item) => (
+          <div className="leadBullet" key={item}>✓ {item}</div>
+        ))}
+      </div>
+    </div>
+
+    <div className="leadRight">
+      {!submitted ? (
+        <form
+          action="https://formspree.io/f/xkokebwk"
+          method="POST"
+          className="leadForm"
+        >
+
+          {/* Header */}
+          <div>
+            <div className="microLabel">Get instant access</div>
+            <h3 className="formTitle">{copy.ctaPrimary}</h3>
           </div>
 
-          <div className="leadRight">
-            {!submitted ? (
-              <form action="https://formspree.io/f/xkokebwk" method="POST"> className="leadForm">
-                <div>
-                  <div className="microLabel">Get instant access</div>
-                  <h3 className="formTitle">{copy.ctaPrimary}</h3>
-                </div>
+          {/* Fields */}
+          <div className="formGrid">
 
-                <div className="formGrid">
-                  <div className="field">
-                    <label>{copy.firstName}</label>
-                    <input
-  name="email"
-  type="email"
-  value={form.workEmail}
-  onChange={(e) => setField("workEmail", e.target.value)}
-  placeholder="your@email.com"
-  required
-/>
-                </div>
+            <div className="field">
+              <label>{copy.firstName}</label>
+              <input
+                name="firstName"
+                type="text"
+                value={form.firstName}
+                onChange={(e) => setField("firstName", e.target.value)}
+                placeholder="Steve Peterson"
+                required
+              />
+            </div>
+
+            <div className="field">
+              <label>{copy.email}</label>
+              <input
+                name="email"
+                type="email"
+                value={form.workEmail}
+                onChange={(e) => setField("workEmail", e.target.value)}
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div className="field">
+              <label>Hiring goal</label>
+              <select
+                name="hiringGoal"
+                value={form.hiringGoal}
+                onChange={(e) => setField("hiringGoal", e.target.value)}
+                required
+              >
+                <option value="">Select...</option>
+                <option>Hiring first employee in Europe</option>
+                <option>Expanding team in Europe</option>
+                <option>Hiring contractors</option>
+                <option>Fixing compliance / structure</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div className="field">
+              <label>{copy.primaryCountry}</label>
+              <input
+                name="country"
+                type="text"
+                value={form.country}
+                onChange={(e) => setField("country", e.target.value)}
+                placeholder="e.g. Spain, Germany, France"
+                required
+              />
+            </div>
+
+          </div>
+
+          {/* Submit */}
+          <button className="primaryBtn fullWidth" type="submit">
+            {copy.submit}
+          </button>
+
+          <div className="integrationHint">
+            {copy.integrationHint}
+          </div>
+
+        </form>
+      ) : (
+        <div className="successBox">
+          <div className="successIcon">✓</div>
+          <h3>{copy.successTitle}</h3>
+          <p>{copy.successBody}</p>
+        </div>
+      )}
+    </div>
+
+  </div>
+</section>
 
                 <div className="formGrid">
                   <div className="field">

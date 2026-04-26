@@ -1109,94 +1109,88 @@ const handleSubmit = async (e) => {
     </div>
 
     <div className="leadRight">
-      {!submitted ? (
-        <form
-          action="https://formspree.io/f/xkokebwk"
-          method="POST"
-          className="leadForm"
+    {!submitted ? (
+  <form action="https://formspree.io/f/xkokebwk" method="POST" className="leadForm">
+
+    <div>
+      <div className="microLabel">Get instant access</div>
+      <h3 className="formTitle">{copy.ctaPrimary}</h3>
+    </div>
+
+    <div className="formGrid">
+
+      <div className="field">
+        <label>{copy.firstName}</label>
+        <input
+          name="firstName"
+          type="text"
+          value={form.firstName}
+          onChange={(e) => setField("firstName", e.target.value)}
+          placeholder="Steve Peterson"
+          required
+        />
+      </div>
+
+      <div className="field">
+        <label>{copy.email}</label>
+        <input
+          name="email"
+          type="email"
+          value={form.workEmail}
+          onChange={(e) => setField("workEmail", e.target.value)}
+          placeholder="your@email.com"
+          required
+        />
+      </div>
+
+      <div className="field">
+        <label>Hiring goal</label>
+        <select
+          name="hiringGoal"
+          value={form.hiringGoal}
+          onChange={(e) => setField("hiringGoal", e.target.value)}
+          required
         >
+          <option value="">Select...</option>
+          <option>Hiring first employee in Europe</option>
+          <option>Expanding team in Europe</option>
+          <option>Hiring contractors</option>
+          <option>Fixing compliance / structure</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
 
-          {/* Header */}
-          <div>
-            <div className="microLabel">Get instant access</div>
-            <h3 className="formTitle">{copy.ctaPrimary}</h3>
-          </div>
+      <div className="field">
+        <label>{copy.primaryCountry}</label>
+        <input
+          name="country"
+          type="text"
+          value={form.country}
+          onChange={(e) => setField("country", e.target.value)}
+          placeholder="e.g. Spain, Germany, France"
+          required
+        />
+      </div>
 
-          {/* Fields */}
-          <div className="formGrid">
+    </div>
 
-            <div className="field">
-              <label>{copy.firstName}</label>
-              <input
-                name="firstName"
-                type="text"
-                value={form.firstName}
-                onChange={(e) => setField("firstName", e.target.value)}
-                placeholder="Steve Peterson"
-                required
-              />
-            </div>
+    <button className="primaryBtn fullWidth" type="submit">
+      {copy.submit}
+    </button>
 
-            <div className="field">
-              <label>{copy.email}</label>
-              <input
-                name="email"
-                type="email"
-                value={form.workEmail}
-                onChange={(e) => setField("workEmail", e.target.value)}
-                placeholder="your@email.com"
-                required
-              />
-            </div>
+    <div className="integrationHint">
+      {copy.integrationHint}
+    </div>
 
-            <div className="field">
-              <label>Hiring goal</label>
-              <select
-                name="hiringGoal"
-                value={form.hiringGoal}
-                onChange={(e) => setField("hiringGoal", e.target.value)}
-                required
-              >
-                <option value="">Select...</option>
-                <option>Hiring first employee in Europe</option>
-                <option>Expanding team in Europe</option>
-                <option>Hiring contractors</option>
-                <option>Fixing compliance / structure</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
-
-            <div className="field">
-              <label>{copy.primaryCountry}</label>
-              <input
-                name="country"
-                type="text"
-                value={form.country}
-                onChange={(e) => setField("country", e.target.value)}
-                placeholder="e.g. Spain, Germany, France"
-                required
-              />
-            </div>
-
-          </div>
-
-          {/* Submit */}
-          <button className="primaryBtn fullWidth" type="submit">
-            {copy.submit}
-          </button>
-
-          <div className="integrationHint">
-            {copy.integrationHint}
-          </div>
-
-        </form>
-      ) : (
-        <div className="successBox">
-          <div className="successIcon">✓</div>
-          <h3>{copy.successTitle}</h3>
-          <p>{copy.successBody}</p>
-        </div>
-      )}
+  </form>
+) : (
+  <div className="successBox">
+    <div className="successIcon">✓</div>
+    <h3>{copy.successTitle}</h3>
+    <p>{copy.successBody}</p>
+  </div>
+)}
+      
     </div>
 
   </div>

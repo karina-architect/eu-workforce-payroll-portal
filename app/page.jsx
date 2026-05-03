@@ -6,19 +6,24 @@ const COPY = {
   en: {
     navComparison: "Comparison",
     navConsultants: "Consultants",
+    navPricing: "Pricing",
     navFaq: "FAQ",
     navBook: "Book strategy call",
+
     badge: "Premium workforce infrastructure for Europe",
     title: "Hire in Europe without opening entities",
-    subtitle: "Convert contractors into compliant employees in 2 weeks — with payroll, compliance, and high-touch support built in.",
+    subtitle:
+      "Convert contractors into compliant employees in 2 weeks — with payroll, compliance, and high-touch support built in.",
     ctaPrimary: "Get hiring strategy",
     ctaSecondary: "Run cost calculator",
+
     stat1: "2 weeks",
     stat1Sub: "Typical launch speed",
     stat2: "20–40%",
     stat2Sub: "Potential cost optimization",
     stat3: "1 structure",
     stat3Sub: "Single point of control",
+
     calculatorTitle: "EU Hiring Cost & Risk Check",
     calculatorSub: "Get an instant estimate and model recommendation.",
     country: "Country",
@@ -30,15 +35,54 @@ const COPY = {
     result2: "Typical generic EOR cost",
     result3: "Potential monthly savings",
     assessment: "Current assessment",
+
     riskHigh: "High Risk: Consultant Misclassification",
-    riskHighBody: "Independent consultants working long-term with one client may face misclassification risk.",
+    riskHighBody:
+      "Independent consultants working long-term with one client may face misclassification risk.",
     riskMedium: "Recommended: Hybrid structure",
-    riskMediumBody: "A mix of payroll, entity, and selective EOR may be more cost-efficient.",
+    riskMediumBody:
+      "A mix of payroll, entity, and selective EOR may be more cost-efficient.",
     riskLow: "Recommended: Start lean, stay compliant",
-    riskLowBody: "A managed structure can help you move fast while reducing setup delays.",
+    riskLowBody:
+      "A managed structure can help you move fast while reducing setup delays.",
+
+    uniqueBadge: "Workora unique value proposition",
+    uniqueTitle: "You are not just another EOR",
+    uniqueSub:
+      "Workora is built for freelancers and independent consultants who already have clients but need a legal European structure to sign contracts, get paid, access payroll, and work compliantly.",
+    uniqueCards: [
+      [
+        "Freelancer-first",
+        "Designed for consultants and freelancers first — not only HR departments."
+      ],
+      [
+        "Bring your own client",
+        "Already passed the interview and secured the client? Workora enables the contract."
+      ],
+      [
+        "No company needed",
+        "Work legally with European clients without opening your own company."
+      ],
+      [
+        "One flow",
+        "Work permit support, legal setup, employment contract, payroll, and client contracting in one process."
+      ],
+      [
+        "Spain-first advantage",
+        "Start with a compliant Spain-based structure and expand across Europe with stronger cost control."
+      ],
+      [
+        "Fast onboarding",
+        "Move from opportunity to legal working setup in days or weeks, not months."
+      ]
+    ],
+
     consultantBadge: "Consultant vs employee reality",
-    consultantTitle: "Why top consultants across Europe are switching to employment",
-    consultantSub: "Freelancing can bring freedom, but also hidden legal, financial, and social protection risks.",
+    consultantTitle:
+      "Why top consultants across Europe are switching to employment",
+    consultantSub:
+      "Freelancing can bring freedom, but also hidden legal, financial, and social protection risks. Workora helps consultants keep their client and work, while upgrading the legal structure behind it.",
+
     freelanceTitle: "Freelance reality today",
     employeeTitle: "Employment via our structure",
     freelanceBullets: [
@@ -46,77 +90,209 @@ const COPY = {
       "No employer-backed pension or stronger social security",
       "Harder mortgage and credit approval",
       "Greater legal uncertainty with one long-term client",
-      "Admin burden, invoice chasing, and unstable income timing"
+      "Admin burden, invoice chasing, and unstable income timing",
+      "Difficult to sign client contracts when an EU company is required",
+      "No simple route to work permit or employment status"
     ],
     employeeBullets: [
       "Full compliant employment structure",
       "Social security, pension, and healthcare contributions",
       "Same client, same work, cleaner legal setup",
       "Lower misclassification exposure",
-      "Bankable income for loans, mortgages, and planning"
+      "Bankable income for loans, mortgages, and planning",
+      "Client contract enabled through Workora",
+      "Work permit, payroll, and legal onboarding support"
     ],
+
     consultantInsightTitle: "The key insight",
-    consultantInsightBody: "You do not have to change your client or your work. You upgrade the legal and financial structure behind it.",
-    consultantBenefitsTitle: "Why standalone consultants benefit from becoming our employee",
-    consultantBenefitsBody: "This model helps high-value consultants keep momentum while gaining protections usually sacrificed when invoicing alone.",
+    consultantInsightBody:
+      "You do not have to change your client or your work. You upgrade the legal and financial structure behind it.",
+    consultantBenefitsTitle:
+      "Why standalone consultants benefit from becoming our employee",
+    consultantBenefitsBody:
+      "This model helps high-value consultants keep momentum while gaining protections usually sacrificed when invoicing alone.",
     consultantBenefitCards: [
-      ["Keep continuity", "Continue serving the same client with minimal disruption."],
-      ["Gain protection", "Move into payroll, social security, and stronger legal footing."],
-      ["Look stronger financially", "Present stable employment income for loans and long-term planning."],
-      ["Remove admin friction", "Reduce invoicing stress, collections risk, and compliance burden."]
+      [
+        "Keep continuity",
+        "Continue serving the same client with minimal disruption."
+      ],
+      [
+        "Gain protection",
+        "Move into payroll, social security, and stronger legal footing."
+      ],
+      [
+        "Look stronger financially",
+        "Present stable employment income for loans and long-term planning."
+      ],
+      [
+        "Remove admin friction",
+        "Reduce invoicing stress, collections risk, and compliance burden."
+      ]
     ],
+
     featureCards: [
-      ["Reduce contractor risk", "Spot likely misclassification before it becomes a tax or labor issue."],
-      ["Optimize cost", "Use payroll, entity, or EOR only where it truly makes sense."],
-      ["Move faster", "Launch hiring in days or weeks instead of waiting months."],
-      ["Gain visibility", "Get one structure, one invoice, and one decision framework."]
+      [
+        "Reduce contractor risk",
+        "Spot likely misclassification before it becomes a tax or labor issue."
+      ],
+      [
+        "Optimize cost",
+        "Use payroll, entity, or EOR only where it truly makes sense."
+      ],
+      [
+        "Move faster",
+        "Launch hiring in days or weeks instead of waiting months."
+      ],
+      [
+        "Gain visibility",
+        "Get one structure, one invoice, and one decision framework."
+      ]
     ],
+
+    freelancerSeoBadge: "Freelancer work in Europe",
+    freelancerSeoTitle: "Work in Europe without opening a company",
+    freelancerSeoSub:
+      "Workora helps freelancers, IT consultants, remote professionals, and independent contractors legally work with European clients when the client requires a European company, compliant payroll, or employment contract.",
+    freelancerProblemTitle: "Common freelancer problem",
+    freelancerSolutionTitle: "Workora solution",
+    freelancerProblems: [
+      "You have a client but no company",
+      "The client requires an EU-based contracting entity",
+      "You need an employment contract or payroll setup",
+      "You want to convert freelance work into legal employment",
+      "You need work permit or legal onboarding support"
+    ],
+    freelancerSolutions: [
+      "Workora signs with the client through a compliant structure",
+      "You receive employment and payroll support",
+      "Your client gets a cleaner contracting route",
+      "You reduce admin, invoicing, and compliance burden",
+      "You keep the same client and continue the same work"
+    ],
+
     comparisonTitle: "Why not use generic EOR everywhere?",
-    comparisonSub: "Because the most convenient model is not always the smartest or most cost-efficient one.",
+    comparisonSub:
+      "Because the most convenient model is not always the smartest or most cost-efficient one.",
     comparisonRows: [
       ["Speed to launch", "High", "Low to medium", "High"],
       ["Cost optimization", "Low", "Medium", "High"],
       ["Country flexibility", "Medium", "Low", "High"],
       ["Strategic guidance", "Low", "Low", "High"],
-      ["Best for scale", "Medium", "Low", "High"]
+      ["Best for scale", "Medium", "Low", "High"],
+      ["Freelancer-first onboarding", "Low", "Low", "High"],
+      ["Bring-your-own-client model", "Low", "Low", "High"],
+      ["Work permit support", "Limited", "Low", "High"]
     ],
+
+    pricingBadge: "Pricing and revenue model",
+    pricingTitle: "Simple pricing for freelancers and companies",
+    pricingSub:
+      "Start lean, validate demand, and scale through monthly recurring revenue, onboarding fees, legal support, and premium advisory.",
+    pricingCards: [
+      [
+        "Starter",
+        "€299/month",
+        "For freelancers with one client who need basic contract, compliance, and onboarding support.",
+        ["Client contract routing", "Basic compliance review", "Invoice and admin support", "Email support"]
+      ],
+      [
+        "Professional",
+        "€599/month",
+        "For consultants who need employment, payroll support, and stronger legal structure.",
+        ["Employment contract support", "Payroll coordination", "Freelance-to-employee conversion", "Priority onboarding"]
+      ],
+      [
+        "Premium",
+        "€999/month",
+        "For cross-border consultants or companies needing deeper legal, work permit, and relocation support.",
+        ["Work permit support", "Legal partner coordination", "Client contract setup", "Dedicated onboarding support"]
+      ],
+      [
+        "Enterprise",
+        "Custom",
+        "For companies hiring multiple consultants across Europe with compliance, payroll, and workforce design needs.",
+        ["Multi-country setup", "Workforce structuring", "Bulk onboarding", "Custom legal and payroll model"]
+      ]
+    ],
+
+    revenueTitle: "How Workora generates money",
+    revenueSub:
+      "The MVP can start manually at low cost, then scale into a recurring workforce infrastructure platform.",
+    revenuePoints: [
+      "Monthly service fee per consultant or employee",
+      "One-time onboarding and contract setup fee",
+      "Work permit and legal coordination package",
+      "Payroll and compliance administration margin",
+      "Premium advisory for companies hiring cross-border talent",
+      "Enterprise contracts for multi-consultant onboarding"
+    ],
+
     proofTitle: "How this converts into revenue",
     proofSub: "This page works as a premium sales funnel, not just a brochure.",
     proofSteps: [
       "Visitor lands on a pain-led hero section",
       "Interactive calculator creates engagement",
       "Consultant section increases urgency",
+      "Pricing section frames commercial value",
       "Lead form captures qualified prospects",
       "Follow-up pushes the lead into a strategy call"
     ],
+
     leadBadge: "Lead magnet + strategy session",
-    leadTitle: "Get the European Biotech Hiring & Payroll Playbook",
-    leadSub: "Unlock your hiring assessment, receive the playbook, and request a custom review.",
+    leadTitle: "Start working legally in Europe",
+    leadSub:
+      "Submit your details and we will help you structure your client contract, payroll, employment setup, and legal onboarding path.",
     leadBullets: [
       "Country-by-country cost logic",
       "EOR vs payroll vs entity framework",
       "Freelance risk checklist",
-      "Launch plan for compliant EU hiring"
+      "Launch plan for compliant EU hiring",
+      "Work permit and legal setup review",
+      "Bring-your-own-client onboarding path"
     ],
     firstName: "Your name",
     company: "Company",
     email: "Your email",
     primaryCountry: "Primary country",
     submit: "Get playbook + strategy session",
-    integrationHint: "Suggested integrations: HubSpot, Mailchimp, Calendly, LinkedIn Insight Tag, Meta Pixel, Google Ads conversion tracking.",
+    integrationHint:
+      "Suggested integrations: HubSpot, Mailchimp, Calendly, LinkedIn Insight Tag, Meta Pixel, Google Ads conversion tracking.",
     successTitle: "You’re in.",
     successBody: "Your request has been submitted. We will contact you shortly.",
+
     seoTitle: "SEO and discovery layer",
-    seoBody: "Built for Google SEO, Google Ads, LinkedIn, Facebook, and Instagram discovery across Europe.",
+    seoBody:
+      "Built for Google SEO, Google Ads, LinkedIn, Facebook, and Instagram discovery across Europe.",
+    seoExtended:
+      "Optimized for high-intent searches around freelancers working legally in Europe, work permits, contractor-to-employee conversion, EOR alternatives, EU payroll, Spain-based employment structure, and hiring without opening entities.",
     keywordsLabel: "High-intent keyword targets",
+
     faqTitle: "What prospects usually ask before booking",
     faqs: [
-      ["Can you replace Deel or Remote?", "This works best as a strategic layer above generic EOR or payroll tools."],
-      ["Who is this best for?", "Companies hiring in Europe, especially biotech, tech, and regulated teams."],
-      ["Can consultants keep the same client?", "Yes. The goal is usually to improve the legal structure without disrupting the work."],
-      ["Can this page capture real leads?", "Yes. It submits directly to Formspree and can later connect to CRM or booking tools."]
+      [
+        "Can you replace Deel or Remote?",
+        "This works best as a strategic, freelancer-first layer above generic EOR or payroll tools, especially when the consultant already has a client."
+      ],
+      [
+        "Who is this best for?",
+        "Freelancers, IT consultants, independent contractors, and companies hiring international talent across Europe."
+      ],
+      [
+        "Can consultants keep the same client?",
+        "Yes. The goal is usually to improve the legal structure without disrupting the work."
+      ],
+      [
+        "Can this help with work permits?",
+        "The MVP positioning includes work permit and legal onboarding coordination through appropriate legal partners."
+      ],
+      [
+        "Can this page capture real leads?",
+        "Yes. It submits directly to Formspree and can later connect to CRM or booking tools."
+      ]
     ],
-    footer: "Compliant hiring, payroll, and workforce structuring across Europe."
+
+    footer:
+      "Compliant hiring, payroll, freelancer onboarding, and workforce structuring across Europe."
   }
 };
 
@@ -154,14 +330,26 @@ const COUNTRIES = {
 };
 
 const KEYWORDS = [
+  "work in Europe without company",
+  "freelancer Europe legal contract",
+  "contractor to employee Europe",
+  "work permit Europe freelancers",
+  "invoice client without company EU",
+  "EOR alternative freelancers",
+  "freelance compliance Europe",
+  "independent consultant Europe contract",
+  "IT consultant employment Europe",
+  "EU payroll for freelancers",
+  "Spain payroll for freelancers",
   "hire employees in Europe",
   "EOR Europe",
   "payroll services EU",
   "contractor vs employee Europe",
-  "freelance compliance EU",
   "convert contractor to employee",
-  "IT consultant employment Europe",
-  "independent consultant employment contract Europe"
+  "work permit Spain consultant",
+  "European client requires company",
+  "freelancer with no company Europe",
+  "bring your own client employment"
 ];
 
 function Pill({ children }) {
@@ -270,8 +458,31 @@ export default function Page() {
     setSubmitted(true);
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Workora",
+    description:
+      "Workora helps freelancers and companies work legally across Europe through compliant contracts, payroll, employment setup, and work permit support.",
+    url: "https://getworkora.com",
+    sameAs: [],
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "EUR",
+      lowPrice: "299",
+      highPrice: "999",
+      offerCount: "4"
+    },
+    keywords: KEYWORDS.join(", ")
+  };
+
   return (
     <main className="pageShell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
       <div className={showStickyCta ? "stickyBar visible" : "stickyBar"}>
         <div className="stickyInner">
           <div>
@@ -297,6 +508,7 @@ export default function Page() {
           <div className="navDesktop">
             <a href="#comparison">{copy.navComparison}</a>
             <a href="#consultants">{copy.navConsultants}</a>
+            <a href="#pricing">{copy.navPricing}</a>
             <a href="#faq">{copy.navFaq}</a>
             <a href="#lead-capture" className="ghostBtn">{copy.navBook}</a>
           </div>
@@ -329,6 +541,7 @@ export default function Page() {
           <div className="container mobilePanel">
             <a href="#comparison">{copy.navComparison}</a>
             <a href="#consultants">{copy.navConsultants}</a>
+            <a href="#pricing">{copy.navPricing}</a>
             <a href="#faq">{copy.navFaq}</a>
             <a href="#lead-capture" className="mobileBook">{copy.navBook}</a>
           </div>
@@ -463,6 +676,22 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="container sectionPad">
+        <Pill>{copy.uniqueBadge}</Pill>
+        <h2 className="sectionTitle">{copy.uniqueTitle}</h2>
+        <p className="sectionSub">{copy.uniqueSub}</p>
+
+        <div className="featureGrid topGap">
+          {copy.uniqueCards.map(([title, body]) => (
+            <div className="featureCard" key={title}>
+              <div className="featureIcon">★</div>
+              <h3>{title}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="container sectionPad" id="consultants">
         <Pill>{copy.consultantBadge}</Pill>
         <h2 className="sectionTitle">{copy.consultantTitle}</h2>
@@ -519,6 +748,32 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="container sectionPad">
+        <Pill>{copy.freelancerSeoBadge}</Pill>
+        <h2 className="sectionTitle">{copy.freelancerSeoTitle}</h2>
+        <p className="sectionSub">{copy.freelancerSeoSub}</p>
+
+        <div className="twoColGrid topGap">
+          <div className="whiteCard">
+            <h3>{copy.freelancerProblemTitle}</h3>
+            <ul>
+              {copy.freelancerProblems.map((item) => (
+                <li key={item}>⚠ {item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="whiteCard">
+            <h3>{copy.freelancerSolutionTitle}</h3>
+            <ul>
+              {copy.freelancerSolutions.map((item) => (
+                <li key={item}>✓ {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="comparisonSection" id="comparison">
         <div className="container sectionPad">
           <Pill>{copy.navComparison}</Pill>
@@ -550,13 +805,53 @@ export default function Page() {
           {[
             ["Biotech hiring across 4 countries", "Reduce over-reliance on high-cost EOR usage.", "Potential savings: €5K+/month"],
             ["Startup launch without entity setup", "Enable first hires while keeping a path toward later entity formation.", "Launch speed: ~2 weeks"],
-            ["Contractor conversion program", "Move embedded roles into safer employment structures.", "Risk reduction: materially improved"]
+            ["Contractor conversion program", "Move embedded roles into safer employment structures.", "Risk reduction: materially improved"],
+            ["Freelancer with client but no company", "Workora provides a compliant structure so the consultant can contract legally.", "Revenue model: monthly fee + setup"],
+            ["Company hiring outside Europe", "Workora helps structure onboarding, payroll, work permit support, and administration.", "Expansion path: enterprise package"]
           ].map(([title, body, metric]) => (
             <div className="caseCard" key={title}>
               <div className="caseIcon">◆</div>
               <h3>{title}</h3>
               <p>{body}</p>
               <div className="metricPill">{metric}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="container sectionPad" id="pricing">
+        <Pill>{copy.pricingBadge}</Pill>
+        <h2 className="sectionTitle">{copy.pricingTitle}</h2>
+        <p className="sectionSub">{copy.pricingSub}</p>
+
+        <div className="pricingGrid">
+          {copy.pricingCards.map(([title, price, desc, features]) => (
+            <div className="pricingCard" key={title}>
+              <h3>{title}</h3>
+              <div className="price">{price}</div>
+              <p>{desc}</p>
+              <ul>
+                {features.map((item) => (
+                  <li key={item}>✓ {item}</li>
+                ))}
+              </ul>
+              <a href="#lead-capture" className="primaryBtn fullWidth">
+                {copy.ctaPrimary}
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="container sectionPad">
+        <Pill>{copy.revenueTitle}</Pill>
+        <h2 className="sectionTitle">{copy.revenueSub}</h2>
+
+        <div className="featureGrid">
+          {copy.revenuePoints.map((point) => (
+            <div className="featureCard" key={point}>
+              <div className="featureIcon">€</div>
+              <p>{point}</p>
             </div>
           ))}
         </div>
@@ -654,6 +949,8 @@ export default function Page() {
                       <option value="expanding">Expanding team in Europe</option>
                       <option value="contractors">Hiring contractors</option>
                       <option value="compliance">Fixing compliance / structure</option>
+                      <option value="work-permit">Work permit / legal setup support</option>
+                      <option value="freelancer-client">I am a freelancer with my own client</option>
                       <option value="unsure">Not sure yet</option>
                     </select>
                   </div>
@@ -699,6 +996,7 @@ export default function Page() {
           <Pill>{copy.seoTitle}</Pill>
           <h2 className="sectionTitle smallTop">{copy.seoBody}</h2>
           <p className="sectionSub">{copy.keywordsLabel}</p>
+          <p className="sectionSub small">{copy.seoExtended}</p>
 
           <div className="keywordWrap">
             {KEYWORDS.map((item) => (

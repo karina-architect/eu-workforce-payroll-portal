@@ -353,7 +353,7 @@ a { color: inherit; text-decoration: none; }
 .assessment.high {
   background: rgba(127, 29, 29, 0.12);
   border-color: rgba(248, 113, 113, 0.28);
-  color: #fecaca;
+  color: #524141;
 }
 .assessment.medium {
   background: rgba(146, 64, 14, 0.16);

@@ -991,34 +991,51 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="container sectionPad">
-        <div className="seoCard">
-          <Pill>{copy.seoTitle}</Pill>
-          <h2 className="sectionTitle smallTop">{copy.seoBody}</h2>
-          <p className="sectionSub">{copy.keywordsLabel}</p>
-          <p className="sectionSub small">{copy.seoExtended}</p>
+     <section className="container sectionPad">
+  <div className="cleanSeoBlock">
+    <Pill>Work legally across Europe</Pill>
 
-          <div className="keywordWrap">
-            {KEYWORDS.map((item) => (
-              <span className="keywordTag" key={item}>{item}</span>
-            ))}
-          </div>
+    <h2 className="sectionTitle">
+      Work in Europe without opening a company
+    </h2>
 
-          <div className="channelGrid">
-            {[
-              ["Google", "SEO pages, ads, high-intent keyword matching"],
-              ["LinkedIn", "Founder, CFO, HR and consultant targeting"],
-              ["Facebook", "Retargeting and consultant awareness ads"],
-              ["Instagram", "Short-form consultant pain-to-solution hooks"]
-            ].map(([title, body]) => (
-              <div className="channelCard" key={title}>
-                <h4>{title}</h4>
-                <p>{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <p className="sectionSub">
+      Whether you're a freelancer, consultant, or company, Workora helps you operate legally across Europe with compliant employment structures, payroll, and contractor-to-employee conversion — without the complexity of setting up entities.
+    </p>
+
+    <div className="featureGrid topGap">
+      <div className="featureCard">
+        <h3>For freelancers</h3>
+        <p>
+          Keep your client, upgrade your legal structure, and access social security, payroll, and financial stability.
+        </p>
+      </div>
+
+      <div className="featureCard">
+        <h3>For companies</h3>
+        <p>
+          Hire across Europe without opening entities while reducing compliance risks and optimizing cost.
+        </p>
+      </div>
+
+      <div className="featureCard">
+        <h3>For consultants</h3>
+        <p>
+          Convert long-term contracts into compliant employment without disrupting your work or income.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* 🔒 Hidden SEO layer (Google reads it, users don't see it) */}
+  <div style={{ display: "none" }}>
+    hire employees in Europe, EOR Europe, payroll services EU, contractor vs employee Europe,
+    freelance compliance EU, convert contractor to employee, IT consultant employment Europe,
+    independent consultant employment contract Europe, work in Europe without company,
+    freelancer Europe legal contract, work permit Europe freelancers, invoice client without company EU,
+    EOR alternative freelancers, EU payroll for freelancers, Spain payroll freelancers
+  </div>
+</section>
 
       <section className="container sectionPad" id="faq">
         <Pill>{copy.navFaq}</Pill>
